@@ -1,0 +1,71 @@
+* {
+  font-family: 'Droid Serif', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.box {
+  position: relative;
+  top: 0%;
+  margin: 0 auto;
+  padding-left: none;
+  width: 400px;
+  height: 100%;
+  text-align:center;
+}
+
+.box p {
+  font-size: 100px;
+  width:100%;
+  line-height: 100px;
+}
+
+.box #title {
+  margin-bottom: 50px;
+  /* fade in */
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  /* for webkit browser */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+}
+
+.box #text {
+  font-size: 60px;
+  /* fade in */
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 1;
+  /* for webkit browser */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 1;
+}
+
+/* animation */
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
